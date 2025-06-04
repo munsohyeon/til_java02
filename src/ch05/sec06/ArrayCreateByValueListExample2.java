@@ -18,7 +18,7 @@ public class ArrayCreateByValueListExample2 {
     public static void printItem(int[] arr) {
         //System.out.println("printItem: " + Arrays.toString(arr));
         for(int i=0; i<arr.length; i++) {
-            System.out.printf("score[%d]: %d\n", i, arr[i])
+            System.out.printf("score[%d]: %d\n", i, arr[i]);
         }
 
         /*
