@@ -3,6 +3,7 @@ package ch04.sec04.method;
 import ch03.sec11.ScoreMethodExample;
 // static 메소드 외의 메소드를 사용할려면 무조건 객체를 생성하여야 한다.
 public class Mission03Method {
+    // void 리턴타입, Mission03Method 메소드명, 매개변수(파라미터)
     public static void main(String[] args) {
         int star = ScoreMethodExample.getRandomValue(3, 7);
         System.out.println("star: " + star);
