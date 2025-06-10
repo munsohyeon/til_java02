@@ -1,7 +1,5 @@
 package ch02.sec08;
 
-import ch06.sec08.Calculator;
-
 public class CastingMethodExample {
     public static void main(String[] args) {
 
