@@ -2,9 +2,11 @@ package ch06.sec08;
 
 public class PrimitiveAndReference {
     public static void main(String[] args) {
+
         int num = 10;
-        Numbox numbox = new Numbox();
-        numbox.num = 10;
+        // 래퍼런스 타입의 주소값저장
+        Numbox numbox = new Numbox(); // 기본생성자(default Construction)
+        numbox.num = 10; // 접근할때는 .(점)으로
 
         changNum(num);
 
