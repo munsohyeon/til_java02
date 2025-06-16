@@ -31,7 +31,25 @@ public class Card {
         return String.format("%s%s", this.pattern, this.denomination);
     }
 
+    public int getpoint() {
+        return 0;
+    }
 }
     // 생성자: 리턴타입없어야 하고 클래스명이 같아야한다.
     // 생성자를 만드는 이유: 객체 생성을 하기 위해
     // 기본 생성자 : 모든 클래스에 자동으로 만들어주는 거
+
+
+//public static boolean shouldDrawCard(int totalScore) {
+//    return totalScore <= 16;
+//}
+//
+//public static void main(String[] args) {
+//    // 예시 테스트
+//    int dealerScore = 15;
+//    if (shouldDrawCard(dealerScore)) {
+//        System.out.println("딜러는 카드를 더 받아야 합니다.");
+//    } else {
+//        System.out.println("딜러는 카드를 받지 않습니다.");
+//    }
+//}
