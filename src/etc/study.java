@@ -11,60 +11,15 @@ public class study {
        Child 객체 주소값도 받을수 있고 자식 주소값도 받을 수 있다.
 
        - override
+       부모 클래스 메소드를 들고와서 내용만 고친후 다시 사용한다고 해서
+       재정의라고 함!
 
        - abstract
        1. 추상메소드
        (상 메소드를 단 하나라도 가지고 있다면 클래스는 추상 클래스가 되어야 한다.)
        2. 추상클래스는 객체화가 되지 않게 만든다(객체가 없더라도)
+       ^ 그이유는 부모역할만 하기 위해서
 
 
-
-
-
-
-    @Override
-    public String toString() {
-        return "Product [price=" + price + ", bonusPoint=" + bonusPoint + "]";
-}
-
-
-package ch07.sec07.poly2;
-
-public class Buyer {
-
-    // 제품 구매 메서드
-    public void buy(Product p) {
-        if (money < p.getPrice()) {
-            System.out.println("잔액이 부족합니다.");
-            return;
-        }
-
-        // 구매 처리
-        money -= p.getPrice();
-        bonusPoint += p.getPrice() / 10; // 예: 10% 적립
-        System.out.println(p + "을/를 구입하였습니다.");
-    }
-
-    // 현재 상태 출력 (선택 사항)
-    public void showInfo() {
-        System.out.println("현재 남은 돈: " + money + "원");
-        System.out.println("보너스 포인트: " + bonusPoint + "점");
-    }
-
-    // getter (필요 시)
-    public int getMoney() {
-        return money;
-    }
-
-    public int getBonusPoint() {
-        return bonusPoint;
-    }
-}
-
-
-
-
-
-    */
-
+     */
 }
